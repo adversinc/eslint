@@ -1,0 +1,17 @@
+{
+	"scripts": {
+		"test": "clear && npx eslint -c eslint.config.mjs ."
+	},
+	"peerDependencies": {
+		"eslint": "^8.57.1",
+		"typescript": "^5"
+	},
+	"dependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.62.0",
+		"@typescript-eslint/parser": "^5.62.0",
+		"eslint-plugin-jsdoc": "^50.6.3"
+	},
+	"devDependencies": {
+		"typescript": "5.1"
+	}
+}
