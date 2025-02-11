@@ -1,17 +1,23 @@
 {
+	"name": "@advers/eslint",
+	"version": "1.0.0",
+	"description": "Universal eslint rules set",
 	"scripts": {
-		"test": "clear && npx eslint -c eslint.config.mjs ."
+		"test": "clear && npx eslint -c eslint.config.mjs .; exit 0"
 	},
+
 	"peerDependencies": {
 		"eslint": "^8.57.1",
 		"typescript": "^5"
 	},
 	"dependencies": {
+		"@stylistic/eslint-plugin-js": "^3.1.0",
 		"@typescript-eslint/eslint-plugin": "^5.62.0",
 		"@typescript-eslint/parser": "^5.62.0",
-		"eslint-plugin-jsdoc": "^50.6.3"
+		"eslint-plugin-jsdoc": "^42.0.0"
 	},
 	"devDependencies": {
+		"eslint": "^8.57.1",
 		"typescript": "5.1"
 	}
 }

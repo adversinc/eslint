@@ -3,8 +3,6 @@ import tsPlugin from "@typescript-eslint/eslint-plugin";
 import jsdoc from 'eslint-plugin-jsdoc';
 
 export default [
-	//jsdocPlugin.configs['flat/recommended'],
-
 	{
 		files: ['**/*.ts'],
 		plugins: {
@@ -18,15 +16,20 @@ export default [
 
 		"rules": {
 			"semi": ["error", "always"],
-			"indent": ["error", "tab"],
-			"keyword-spacing": ["error", { "overrides": {
-					"if": { "after": false },
-					"for": { "after": false },
-					"while": { "after": false },
-					"static": { "after": false },
-					"catch": { "after": false },
-					"as": { "after": false }
-				} }],
+			"indent": ["error", "tab", {
+				"SwitchCase": 1,
+			}],
+			"keyword-spacing": ["error", {
+				"overrides": {
+					"if": {"after": false},
+					"for": {"after": false},
+					"while": {"after": false},
+					"static": {"after": false},
+					"catch": {"after": false},
+					"as": {"after": false},
+					"switch": {"after": false},
+				}
+			}],
 			"object-curly-spacing": ["error", "always"],
 
 
