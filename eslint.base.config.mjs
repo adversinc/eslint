@@ -109,7 +109,16 @@ export default [
 			}
 			],
 			"jsdoc/require-returns": [ "off" ],
-			"jsdoc/require-param": [ "off" ]
+			"jsdoc/require-param": [ "off" ],
+
+			// Force "type" import without TS verbatim
+			"@typescript-eslint/consistent-type-imports": [
+				"error",
+				{
+					prefer: "type-imports",
+					fixStyle: "separate-type-imports"
+				}
+			]
 		}
 	}
 ];
