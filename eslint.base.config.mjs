@@ -63,16 +63,6 @@ export default [
 			"prefer-rest-params": "off",
 
 			// TypeScript rules
-			"@typescript-eslint/indent": [
-				"error", "tab", {
-					"SwitchCase": 1,
-					"ignoredNodes": [
-						"FunctionExpression > .params[decorators.length > 0]",
-						"FunctionExpression > .params > :matches(Decorator, :not(:first-child))",
-						"ClassBody.body > PropertyDefinition[decorators.length > 0] > .key"
-					]
-				}
-			],
 			"@typescript-eslint/no-empty-interface": ["off"],
 			"@typescript-eslint/no-var-requires": ["off"],
 			"@typescript-eslint/no-empty-function": "off",
