@@ -3,7 +3,9 @@
 	"version": "2.0.0",
 	"description": "Universal eslint rules set",
 	"scripts": {
-		"test": "eslint ."
+		"test": "npm run test:good && npm run test:bad",
+		"test:good": "eslint test/03-good.ts",
+		"test:bad": "eslint test/01-bad.ts test/02-bad.js; test $? -eq 1"
 	},
 	"peerDependencies": {
 		"eslint": "^10",
