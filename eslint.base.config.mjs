@@ -36,6 +36,8 @@ export default [
 				}
 			}],
 			"object-curly-spacing": ["error", "always"],
+			"curly": ["error", "all"],
+			"@stylistic/block-spacing": ["error", "always"],
 
 			"space-before-blocks": "error",
 
