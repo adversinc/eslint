@@ -1,5 +1,7 @@
 import tsParser from "@typescript-eslint/parser";
 import tsPlugin from "@typescript-eslint/eslint-plugin";
+import stylistic from "@stylistic/eslint-plugin";
+import decoratorPosition from "eslint-plugin-decorator-position";
 import jsdoc from 'eslint-plugin-jsdoc';
 
 export default [
@@ -7,6 +9,8 @@ export default [
 		files: ['**/*.ts'],
 		plugins: {
 			jsdoc,
+			"@stylistic": stylistic,
+			"decorator-position": decoratorPosition,
 			"@typescript-eslint": tsPlugin,
 		},
 
@@ -15,6 +19,10 @@ export default [
 		},
 
 		"rules": {
+			"decorator-position/decorator-position": ["error", {
+				properties: "above",
+				methods: "above",
+			}],
 			"semi": ["error", "always"],
 			"indent": ["error", "tab", {
 				"SwitchCase": 1,
