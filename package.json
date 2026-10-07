@@ -1,6 +1,6 @@
 {
 	"name": "@advers/eslint",
-	"version": "2.1.0",
+	"version": "2.2.0",
 	"description": "Universal eslint rules set",
 	"scripts": {
 		"test": "npm run test:good && npm run test:bad",
